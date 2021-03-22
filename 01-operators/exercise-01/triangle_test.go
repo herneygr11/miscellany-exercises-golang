@@ -9,6 +9,6 @@ func TestTriangle(t *testing.T) {
 	want := 90.0
 
 	if got != want {
-		t.Errorf("got %v want %v", got, want)
+		t.Errorf("got %.2f want %.2f", got, want)
 	}
 }
