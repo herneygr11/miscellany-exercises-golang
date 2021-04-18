@@ -8,3 +8,7 @@ type Square struct {
 func (s *Square) Area() float64 {
 	return s.Side * s.Side
 }
+
+func (S *Square) Perimeter() float64 {
+	return S.Side * 4
+}
