@@ -18,3 +18,16 @@ func TestArea(t *testing.T) {
 		t.Errorf("got %.2f, want %.2f", got, want)
 	}
 }
+
+func TestPerimeter(t *testing.T) {
+	square := services.Square{
+		Side: 12,
+	}
+
+	got := 48.0
+	want := square.Perimeter()
+
+	if got != want {
+		t.Errorf("got %.2f, want %.2f", got, want)
+	}
+}
